@@ -2,12 +2,17 @@
 
 ## Table of Contents
 
+* [Introduction](#intoduction)
 * [Instructions](#instructions)
+
+## Introduction
+
+This project aims to give real-world scenarios of manipulating the DOM. The functionality used serves two purposes: to prepare for appending dynamically added data to the DOM, and to learn how javascript can improve the usability of an otherwise static site.
 
 ## Instructions
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+You will be building a multi-section landing page. Often times, we don’t know how much content will be added to a page through a CMS or an API. To circumvent this problem, we can dynamically add the content to the page. We will be demonstrating this with the navigation menu. Additionally, dynamically building the navigation is a great precursor to understanding the virtual DOM which you will experience when you begin working with JavaScript frameworks.
 
-To get started, open `js/app.js` and start building out the app's functionality
+To improve the user experience, the section actively being viewed should be differentiated in some way. Additionally, when a user clicks on a navigation item, the item should scroll you to the appropriate section rather than giving you the default jump.
 
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+This may not sound like a lot, but there are a fair amount of moving pieces that rely on each other to work. You’ll need to plan out the logic of what you are trying to accomplish before you begin developing. If you find this process to be quick, there’s a list of additional functionality that you can add that all strive to improve the users’ experience.

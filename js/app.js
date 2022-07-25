@@ -23,14 +23,13 @@
  * 
 */
 
+const allSections = document.querySelectorAll('.section_group'); //selects all sections in the html
+const navList = document.querySelector('#navbar__list'); //select ul in navbar
 
 /**
  * End Global Variables
  * Start Helper Functions
- * 
 */
-
-
 
 /**
  * End Helper Functions
@@ -38,18 +37,7 @@
  * 
 */
 
-// build the nav
-/**
- *
- * 
- * 
- *  
- */
-
-//selects all sections in the html
-const allSections = document.querySelectorAll('.section_group');
-//select ul in navbar
-const navList = document.querySelector('#navbar__list');
+// BUILD THE NAV
 
 //loop through each section
 for (const section of allSections) {
@@ -66,6 +54,16 @@ for (const section of allSections) {
     newLi.appendChild(newA); // append new <a> within new <li>, then add it to navList
     navList.appendChild(newLi);
 
+
+// SCROLL TO SECTION
+    // TODO:
+    // 1. add event listeners to each link in navbar
+    //      click event
+    // 2. function callback
+    //      call prevent default behaviour for clicking links (before scrollIntoView method)
+    //      get the target id (sections in the html)
+    // 3.   use scrollintoview w/ target id   
+
 // scroll into view sections
     // console.log(newA);
     newA.addEventListener('click', function (event) {
@@ -77,18 +75,11 @@ for (const section of allSections) {
     });
 };
 
-// SCROLL
-// 1. add event listeners to each link in navbar
-//      click event
-// 2. function callback
-//      call prevent default behaviour for clicking links (before)
-//      get the target id (sections in the html)
-// 3.   use scrollintoview w/ target id    
 
+// ADD/REMOVE ACTIVE CLASS
 
-
-// Add class 'active' to section when near top of viewport
-window.addEventListener('scroll', highlight); // highlight section in viewport to yellow
+// Add class 'your-active-class' to section when it is visible
+window.addEventListener('scroll', highlight); // highlight section in viewport
 // function to add/remove #your-active-class in each section
 function highlight() { 
      for (i = 0; i < allSections.length; i++) {
@@ -99,7 +90,7 @@ function highlight() {
          }
      }
  }
-// function to define the sections' position in viewport
+// function to define visible sections' position in viewport
 function isVisible(element) { 
      let bounding = element.getBoundingClientRect();
      return (
@@ -110,9 +101,6 @@ function isVisible(element) {
      );
  };
  
-
-// Scroll to anchor ID using scrollTO event
-
 
 /**
  * End Main Functions
