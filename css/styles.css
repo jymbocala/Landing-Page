@@ -11,16 +11,16 @@
 
 /* ---- Base Rules ---- */
 * {
-    border: red solid 1px;
+    /* border: red solid 1px; */
 }
 
-html {
+/* html {
     scroll-behavior: smooth;
-  }
+  } */
 
 body {
     background: rgb(136,203,171);
-    background: linear-gradient(0deg, rgba(136,203,171,1) 0%, rgba(0,13,60,1) 100%);
+    background: linear-gradient(0deg, rgb(109, 212, 162) 0%, rgb(3, 23, 97) 100%);
     margin: 0;
     font-family: 'Merriweather', serif;
     color: #fff;
@@ -84,6 +84,7 @@ main {
 .main-hero {
     min-height: 40vh;
     padding-top: 3em;
+    transition: all 300ms ease-in-out;
 }
 
 section {
@@ -96,6 +97,10 @@ section {
 /* ---- Module Rules ---- */
 
 /* Navigation Styles*/
+nav {
+    max-width: 1320px;
+}
+
 .navbar__menu ul {
     padding-left: 0;
     margin: 0;
@@ -104,10 +109,17 @@ section {
 
 .navbar__menu li {
     display: inline-block;
+    /* display: flex; */
+}
+
+.navbar__menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1rem;
 }
 
 .navbar__menu .menu__link {
-    display: block;
+    display: inline-block;
     padding: 1em;
     font-weight: bold;
     text-decoration: none;
@@ -115,10 +127,16 @@ section {
 }
 
 .navbar__menu .menu__link:hover {
-    background: #333;
+    /* background: #333; */
     color: #fff;
     transition: ease 0.3s all;
 }
+
+.menu__link:hover a {
+    color: rgb(37, 0, 201);
+    transition: ease 0.3s all;
+}
+
 
 /* Header Styles */
 .page__header {
@@ -126,6 +144,7 @@ section {
     position: fixed;
     top: 0;
     width: 100%;
+    max-width: 1320px;
     z-index: 5;
 }
 
@@ -228,8 +247,9 @@ section:nth-of-type(3n + 1) .landing__container::after {
 /* Section Active Styles */
 /* Note: your-active-class class is applied through javascript. You should update the class here and in the index.html to what you set in your javascript file.  */
 section.your-active-class {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+    background-color: rgba(255, 255, 255, 0.1);
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%); */
+    transition: all 300ms ease-in-out;
 }
 
 section.your-active-class .landing__container::before {
