@@ -14,10 +14,6 @@
     border: red solid 1px;
 } */
 
-/* html {
-    scroll-behavior: smooth;
-  } */
-
 body {
     background: rgb(136,203,171);
     background: linear-gradient(0deg, rgb(109, 212, 162) 0%, rgb(3, 23, 97) 100%);
@@ -109,7 +105,8 @@ nav {
 
 .navbar__menu li {
     display: inline-block;
-    /* display: flex; */
+    cursor: pointer;
+    margin: 0;
 }
 
 .navbar__menu a {
@@ -127,14 +124,22 @@ nav {
 }
 
 .navbar__menu .menu__link:hover {
-    background: rgb(215, 215, 215);
-    color: #fff;
+    background:  rgb(3, 23, 97);
+    color:#fff;
     transition: ease 0.3s all;
 }
 
 .menu__link:hover a {
-    color: rgb(37, 0, 201);
+    color:#fff;
     transition: ease 0.3s all;
+}
+
+.active-nav {
+    background:  rgb(3, 23, 97);
+}
+
+.active-nav a {
+    color: #fff;
 }
 
 

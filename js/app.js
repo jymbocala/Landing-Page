@@ -50,7 +50,6 @@ for (const section of allSections) {
     const newLi = document.createElement('li'); //create new <li>, with a class to be used for styling
 
     newLi.classList.add('menu__link');
-    newA.href = '#' + sectionId; // set new <a> tag's href with the section id
     newLi.appendChild(newA); // append new <a> within new <li>, then add it to navList
     navList.appendChild(newLi);
 
@@ -81,12 +80,16 @@ for (const section of allSections) {
 // Add class 'your-active-class' to section when it is visible
 window.addEventListener('scroll', highlight); // highlight section in viewport
 // function to add/remove #your-active-class in each section
+// Add active class to navbar when clicked
 function highlight() { 
+    const liEl = document.getElementsByTagName("li"); 
      for (i = 0; i < allSections.length; i++) {
          if(!isVisible(allSections[i])){
              allSections[i].classList.remove('your-active-class');
+             liEl[i+1].classList.remove('active-nav');
          } else {
              allSections[i].classList.add('your-active-class');
+             liEl[i+1].classList.add('active-nav');
          }
      }
  }
@@ -111,8 +114,3 @@ function isVisible(element) {
 // Build menu 
  
 // Set sections as active
-
-
-
-
-
