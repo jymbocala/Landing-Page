@@ -22,7 +22,6 @@ This may not sound like a lot, but there are a fair amount of moving pieces that
 - HTML
 - CSS
 - JavaScript
-- -JQuery
 
 ## Author
 [Jym Bocala](https://github.com/jymbocala)
