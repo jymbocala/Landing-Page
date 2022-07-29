@@ -2,10 +2,10 @@
 
 ## Table of Contents
 
-* [Introduction](#intoduction)
+* [Project Description](#Project Description)
 * [Instructions](#instructions)
 
-## Introduction
+## Project Description
 
 This project aims to give real-world scenarios of manipulating the DOM. The functionality used serves two purposes: to prepare for appending dynamically added data to the DOM, and to learn how javascript can improve the usability of an otherwise static site.
 
