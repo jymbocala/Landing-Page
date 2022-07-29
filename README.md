@@ -2,8 +2,9 @@
 
 ## Table of Contents
 
-* [Project Description](#Project Description)
+* [Project Description](#project-description)
 * [Instructions](#instructions)
+* [Technologies Used](#technologies-used)
 
 ## Project Description
 
@@ -16,3 +17,12 @@ You will be building a multi-section landing page. Often times, we don’t know 
 To improve the user experience, the section actively being viewed should be differentiated in some way. Additionally, when a user clicks on a navigation item, the item should scroll you to the appropriate section rather than giving you the default jump.
 
 This may not sound like a lot, but there are a fair amount of moving pieces that rely on each other to work. You’ll need to plan out the logic of what you are trying to accomplish before you begin developing. If you find this process to be quick, there’s a list of additional functionality that you can add that all strive to improve the users’ experience.
+
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
+- -JQuery
+
+## Author
+[Jym Bocala](https://github.com/jymbocala)
